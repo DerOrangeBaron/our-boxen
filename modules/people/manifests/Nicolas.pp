@@ -1,14 +1,14 @@
 class people::tombar{
 
   osx::recovery_message {
-    'If this Mac is found, please email martin.loy@batanga.com':
+    'If this Mac is found, please email nicolas.eduardo.lopez@gmail.com':
   }
 
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_save_dialog
-  include osx::global::disable_remote_control_ir_receiver
+#  include osx::global::disable_remote_control_ir_receiver
 
-  include osx::global::enable_standard_function_keys
+#  include osx::global::enable_standard_function_keys
 
   include osx::dock::autohide
   include osx::dock::clear_dock
@@ -18,7 +18,7 @@ class people::tombar{
   include osx::no_network_dsstores
 
   class { 'osx::sound::interface_sound_effects':
-    enable => false
+    enable => true
   }
 	
   class { 'osx::dock::icon_size':
@@ -47,10 +47,10 @@ class people::tombar{
 
   include java
 #  include jenkins
-  include limechat
+#  include limechat
 #  include littlesnitch
 #  include macvim
-  include packer
+#  include packer
   include phantomjs
   include skype
   include sourcetree
@@ -82,8 +82,8 @@ class people::tombar{
   ]:
   }
 
-  git::config::global { 'user.email': value => 'martinloy.uy@gmail.com' }
-  git::config::global { 'user.name': value => 'Martin Loy' }
+  git::config::global { 'user.email': value => 'elnicolopez@gmail.com' }
+  git::config::global { 'user.name': value => 'Nicolas Lopez' }
   git::config::global { 'color.ui': value => 'auto' }
 
   # set a global gitignore file
