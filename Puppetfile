@@ -59,3 +59,44 @@ github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "ctags",       "1.0.0"
+github "chrome",      "1.1.2"
+github "firefox",     "1.2.1"
+github "geoip",       "1.0.0"
+github "intellij",    "1.5.1"
+github "iterm2",      "1.1.2"
+github "java", 	      "1.5.0"
+github "skype",       "1.0.8"
+github "tmux",        "1.0.2"
+github "tunnelblick", "1.0.6"
+github "transmission","1.1.0"
+github "osx",         "2.7.0"
+github "python",      "1.1.1"
+github "virtualbox",  "1.0.13"
+github "vagrant",     "3.1.1"
+github "vlc",  	      "1.1.0"
+github "vim",         "1.0.5" 
+github "wget",        "1.0.1", :repo => "tombar/puppet-wget"
+
+github "limechat",    "1.1.0", :repo => "mozilla-boxen/puppet-limechat"
+
+github "bash", 	      "1.1.0"
+github "caffeine",    "1.0.0"
+github "chicken_of_the_vnc", "0.1.2" 
+github "coccinellida","0.1.2" 
+github "dash",	      "1.0.0"
+github "daisy_disk",  "1.0.1"
+github "elasticsearch","2.4.0"
+# github "jenkins",     "0.0.8", :repo => "tombar/puppet-jenkins"
+github "macvim",      "1.0.0"
+github "hipchat",     "1.1.3"
+github "packer",      "1.3.0"
+github "sourcetree",  "1.0.0"
+github "shortcat",    "1.0.6"
+
+# github "littlesnitch", "1.1.0", :repo => "andrzejsliwa/puppet-littlesnitch"
+
+
+
+
