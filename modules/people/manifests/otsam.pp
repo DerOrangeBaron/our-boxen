@@ -69,6 +69,11 @@ class people::tombar{
     edition => 'community',
   }
 
+  include sublime_text::v2
+  sublime_text::v2::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  } 
+
   include vim
   vim::bundle { [
     'scrooloose/syntastic',
