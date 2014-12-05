@@ -1,7 +1,9 @@
-class people::tombar{
+class people::derorangebaron{
+
+	notify{ "soy un groso, muy groso": }
 
   osx::recovery_message {
-    'If this Mac is found, please email nicolas.eduardo.lopez@gmail.com':
+    'If this Mac is found, please email nicolas.lopez@towerhousestudio.com':
   }
 
   include osx::global::enable_keyboard_control_access
@@ -69,10 +71,6 @@ class people::tombar{
     edition => 'community',
   }
 
-  include sublime_text::v2
-  sublime_text::v2::package { 'Emmet':
-    source => 'sergeche/emmet-sublime'
-  } 
 
   include vim
   vim::bundle { [
@@ -102,7 +100,7 @@ class people::tombar{
     content => '.bundle',
   }
 
-  package { ['pwgen', 'w3m', 'bwm-ng', 'jq', 'unrar', 'pstree', 'wget', 'watch']:
+  package { ['pwgen', 'w3m', 'bwm-ng', 'jq', 'unrar', 'pstree', 'watch']:
     ensure => present
   }
 
